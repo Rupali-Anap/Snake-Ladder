@@ -41,6 +41,7 @@ public class Snakeladder {
                             playerPosition = START_POSITION;
                             System.out.println("!!!! Player position getting less than " + START_POSITION + " !!!!");
                         }
+                        System.out.println("Player position : " + playerPosition);
                         break;
                     case IS_LADDER :
                         System.out.println("Ladder");
@@ -49,20 +50,19 @@ public class Snakeladder {
                             playerPosition -= roll;
                             System.out.println("!!!!Player position getting more than " + FINAL_POSITION + " !!!!");
                         }
+                        System.out.println("Player position : " + playerPosition);
                         break;
                     default:
                         System.out.println("No play");
                         System.out.println("Player position : " + playerPosition);
-
                 }
-
             }
 
+            System.out.println("Total Dice count : " + diceCount);
             System.out.println("Finally Player position : " + playerPosition);
 
         }
     }
-
 
 
 
